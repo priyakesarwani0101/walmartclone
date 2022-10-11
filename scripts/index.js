@@ -77,6 +77,45 @@ const fetchingdatafor_sixth_div = async () =>{
         folder.append(div);
     })
 }
+const fetchingdatafor_nineth_div = async () =>{
+    let res = await getdata('https://my-notso-cool-project.herokuapp.com/in_season');
+    document.getElementById("nineth_div_second_first_first_img").src = res[0].image_url;
+    document.getElementById("nineth_div_second_first_second_h3").innerHTML = res[0].title;
+    document.getElementById("nineth_div_second_first_second_p").innerHTML = res[0].sub_title;
+    document.getElementById("nineth_div_second_second_first_img").src = res[1].image_url;
+    document.getElementById("nineth_div_second_second_second_h3").innerHTML = res[1].title;
+    document.getElementById("nineth_div_second_second_second_p").innerHTML = res[1].sub_title;
+}
+const fetchingdatafor_tenth_div = async () =>{
+    let res = await getdata('https://my-notso-cool-project.herokuapp.com/Health_&_Welness');
+    document.getElementById("tenth_div_second_first_first_img").src = res[0].image_url;
+    document.getElementById("tenth_div_second_first_second_h3").innerHTML = res[0].title;
+    document.getElementById("tenth_div_second_first_second_p").innerHTML = res[0].sub_title;
+    document.getElementById("tenth_div_second_second_first_img").src = res[1].image_url;
+    document.getElementById("tenth_div_second_second_second_h3").innerHTML = res[1].title;
+    document.getElementById("tenth_div_second_second_second_p").innerHTML = res[1].sub_title;
+}
+const fetchingdatafor_eleventh_div = async () =>{
+    let res = await getdata('https://my-notso-cool-project.herokuapp.com/brand_new_for_you');
+    document.getElementById("eleventh_div_second_first_first_img").src = res[0].image_url;
+    document.getElementById("eleventh_div_second_first_second_h3").innerHTML = res[0].title;
+    document.getElementById("eleventh_div_second_first_second_p").innerHTML = res[0].sub_title;
+    document.getElementById("eleventh_div_second_second_first_img").src = res[1].image_url;
+    document.getElementById("eleventh_div_second_second_second_h3").innerHTML = res[1].title;
+    document.getElementById("eleventh_div_second_second_second_p").innerHTML = res[1].sub_title;
+    document.getElementById("eleventh_div_second_third_first_img").src = res[2].image_url;
+    document.getElementById("eleventh_div_second_third_second_h3").innerHTML = res[2].title;
+    document.getElementById("eleventh_div_second_third_second_p").innerHTML = res[2].sub_title;
+    document.getElementById("eleventh_div_second_fourth_first_img").src = res[3].image_url;
+    document.getElementById("eleventh_div_second_fourth_second_h3").innerHTML = res[3].title;
+    document.getElementById("eleventh_div_second_fourth_second_p").innerHTML = res[3].sub_title;
+    document.getElementById("eleventh_div_second_fifth_first_img").src = res[4].image_url;
+    document.getElementById("eleventh_div_second_fifth_second_h3").innerHTML = res[4].title;
+    document.getElementById("eleventh_div_second_fifth_second_p").innerHTML = res[4].sub_title;
+    document.getElementById("eleventh_div_second_sixth_first_img").src = res[5].image_url;
+    document.getElementById("eleventh_div_second_sixth_second_h3").innerHTML = res[5].title;
+    document.getElementById("eleventh_div_second_sixth_second_p").innerHTML = res[5].sub_title;
+}
 fetchingdatafor_pick_of_the_day();
 fetchingdatafor_second_div_first();
 fetchingdatafor_second_div_second();
@@ -84,3 +123,6 @@ fetchingdatafor_second_div_third();
 fetchingdatafor_fourth_div();
 fetchingdatafor_fifth_div();
 fetchingdatafor_sixth_div();
+fetchingdatafor_nineth_div();
+fetchingdatafor_tenth_div();
+fetchingdatafor_eleventh_div();
