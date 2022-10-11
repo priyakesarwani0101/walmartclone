@@ -39,7 +39,33 @@ const fetchingdatafor_second_div_third = async () =>{
     document.getElementById("second_div_third_second_fourth_img").src = res[5].image_url;
     document.getElementById("second_div_third_second_fourth_p").innerHTML = `${res[5].category}`;
 }
+const fetchingdatafor_fourth_div = async () =>{
+    let res = await getdata('https://my-notso-cool-project.herokuapp.com/no_trick_just_treat');
+    document.getElementById("fourth_div_second_first_img").src = res[0].image_url;
+    document.getElementById("fourth_div_second_first_p").innerHTML = res[0].title;
+    document.getElementById("fourth_div_second_second_img").src = res[1].image_url;
+    document.getElementById("fourth_div_second_second_p").innerHTML = res[1].title;
+    document.getElementById("fourth_div_second_third_img").src = res[2].image_url;
+    document.getElementById("fourth_div_second_third_p").innerHTML = res[2].title;
+    document.getElementById("fourth_div_second_fourth_img").src = res[3].image_url;
+    document.getElementById("fourth_div_second_fourth_p").innerHTML = res[3].title;
+}
+const fetchingdatafor_fifth_div = async () =>{
+    let res = await getdata('https://my-notso-cool-project.herokuapp.com/for_you');
+    document.getElementById("fifth_div_second_first_first_img").src = res[0].image_url;
+    document.getElementById("fifth_div_second_first_second_h3").innerHTML = res[0].title;
+    document.getElementById("fifth_div_second_first_second_p").innerHTML = res[0].sub_title;
+    document.getElementById("fifth_div_second_second_first_img").src = res[1].image_url;
+    document.getElementById("fifth_div_second_second_second_h3").innerHTML = res[1].title;
+    document.getElementById("fifth_div_second_second_second_p").innerHTML = res[1].sub_title;
+    document.getElementById("fifth_div_second_third_first_img").src = res[2].image_url;
+    document.getElementById("fifth_div_second_third_second_h3").innerHTML = res[2].title;
+    document.getElementById("fifth_div_second_third_second_p").innerHTML = res[2].sub_title;
+}
+
+fetchingdatafor_pick_of_the_day();
+fetchingdatafor_second_div_first();
 fetchingdatafor_second_div_second();
 fetchingdatafor_second_div_third();
-fetchingdatafor_second_div_first();
-fetchingdatafor_pick_of_the_day();
+fetchingdatafor_fourth_div();
+fetchingdatafor_fifth_div();
