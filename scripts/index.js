@@ -17,7 +17,6 @@ const fetchingdatafor_second_div_first = async () =>{
 }
 const fetchingdatafor_second_div_second = async () =>{
     let res = await getdata('https://my-notso-cool-project.herokuapp.com/Shop_Rollbacks_and_more');
-    console.log(res);
     document.getElementById("second_div_second_second_first_img").src = res[0].image_url;
     document.getElementById("second_div_second_second_first_p").innerHTML = `upto 35% off on ${res[0].category}`;
     document.getElementById("second_div_second_second_second_img").src = res[1].image_url;
@@ -29,7 +28,6 @@ const fetchingdatafor_second_div_second = async () =>{
 }
 const fetchingdatafor_second_div_third = async () =>{
     let res = await getdata('https://my-notso-cool-project.herokuapp.com/top_find_for_less');
-    console.log(res);
     document.getElementById("second_div_third_second_first_img").src = res[0].image_url;
     document.getElementById("second_div_third_second_first_p").innerHTML = `upto 35% off on ${res[0].category}`;
     document.getElementById("second_div_third_second_second_img").src = res[1].image_url;
@@ -62,10 +60,27 @@ const fetchingdatafor_fifth_div = async () =>{
     document.getElementById("fifth_div_second_third_second_h3").innerHTML = res[2].title;
     document.getElementById("fifth_div_second_third_second_p").innerHTML = res[2].sub_title;
 }
-
+const fetchingdatafor_sixth_div = async () =>{
+    let res = await getdata('https://my-notso-cool-project.herokuapp.com/your_favourite_departement');
+    console.log(res);
+    res.map((el) => {
+        let folder = document.getElementById("sixth_div_second");
+        let div = document.createElement("div");
+        div.setAttribute("class" ,'sixth_div_second_all');
+        let img = document.createElement("img");
+        img.setAttribute("class" ,'sixth_div_second_all_img');
+        img.src = el.image_url;
+        let p = document.createElement("p");
+        p.setAttribute("class" ,'sixth_div_second_all_p');
+        p.innerHTML = el.title;
+        div.append(img,p);
+        folder.append(div);
+    })
+}
 fetchingdatafor_pick_of_the_day();
 fetchingdatafor_second_div_first();
 fetchingdatafor_second_div_second();
 fetchingdatafor_second_div_third();
 fetchingdatafor_fourth_div();
 fetchingdatafor_fifth_div();
+fetchingdatafor_sixth_div();
