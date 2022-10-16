@@ -1,0 +1,119 @@
+
+        .mainFooter {
+            width: 100%;
+            height: 560px;
+            display: flex;
+        
+           align-items: center;
+        }
+
+        .mainFooter #div1,
+        #div2,
+        #div3,
+        #div4 {
+            width: 25%;
+            margin-bottom: 200px;
+            padding-left: 60px;
+      
+            height: 200px;
+        }
+
+        .mainFooter #div5 {
+            width: 40%;
+           margin-bottom: 200px;
+            padding-left: 10px;
+            
+
+        }
+        #div5  p{
+            padding-left: 10px;
+        }
+
+        #scaneImg {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #footer_signin {
+            background-color: whitesmoke;
+            border-radius: 5px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            width: 400px;
+            margin-top: 20px;
+            height: 120px;
+            
+        }
+
+        #footer_inner_sign {
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+            flex-direction: row;
+        }
+        #ulDiv{
+            
+            display: flex;
+            margin-left:  20px;
+            
+            flex-direction: row;
+        }
+        #ulDiv div{
+            margin: 10px;
+            width: 40px ;
+            height: 40px;
+         
+        }
+      
+        /* other css */
+       .mainFooter{
+        
+        background-color:#004f9a;
+       }
+       h4{
+        font-size: 17px;
+        color: white;
+       }
+       ul {
+list-style-type: none;
+}
+ ul li a {
+font-size: 14px;
+color: white;
+margin-bottom: 20px;
+text-decoration: none;
+
+display: block;
+
+transition: all 0.3s ease;
+}
+ ul li a:hover {
+    color: white;
+padding-left: 8px;
+text-decoration: underline;
+}
+#footer_inner_sign{
+   align-items:  center;
+}
+#footer_input_sign{
+    width: 200px;
+    height: 60px;
+padding: 3px;
+}
+#footer_input_sign:hover{
+    border: 2px solid #004f9a ;
+}
+
+#footer_signBtn{
+width: 110px;
+margin-left: 20px;
+height: 50px;
+border-radius: 25px;
+}
+#footer_signBtn:hover{
+    background-color:rgb(119, 117, 117);
+    color: white;
+}
+    
+
+
+  

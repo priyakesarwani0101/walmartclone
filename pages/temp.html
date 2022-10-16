@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style></style>
+
+<body>
+    <form>
+        <input id="image" type="url" placeholder="image" required />
+        <input id="title" type="text" placeholder="title" required />
+        <input id="price" type="number" step="0.01" placeholder="price" required />
+
+        <input id="category" type="text" placeholder="category" required />
+
+        <input id="quantity" type="number" placeholder="quantity" required value="1" />
+
+        <input type="submit" />
+    </form>
+</body>
+<script>
+    const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+    document.querySelector("form").addEventListener("submit", addWishlist);
+
+    function addWishlist() {
+        const image = document.getElementById("image").value;
+        const title = document.getElementById("title").value;
+        const price = document.getElementById("price").value;
+        const category = document.getElementById("category").value;
+
+        const quantity = document.getElementById("quantity").value;
+
+        const data = {
+            image: image,
+            title: title,
+            price: price,
+            category: category,
+            quantity: quantity,
+        };
+
+        wishlist.push(data);
+
+        localStorage.setItem("wishlist", JSON.stringify(wishlist));
+        document.querySelector("form").reset();
+    }
+</script>
+
+</html>

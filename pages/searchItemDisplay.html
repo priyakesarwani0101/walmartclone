@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="navbar.css"> -->
+    <link rel="stylesheet" href="searchItemDisplay.css">
+    <link rel="stylesheet" href="searchData.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <input type="text" onchange="searchData()" id="nav_searchbar">
+   
+    <div id="PosFix">
+        <hr>
+    <div id="buttonsShow1" >
+        <div><button>
+            <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-14f0/k2-_8ce34043-6050-4f39-afb2-3e76a554f8a3.v1.png"  width="16" height="14" alt="">
+             In-Store</button></div>
+        <div><button>$ Price</button></div>
+        <div><button>Brand</button></div>
+        <div><button>Speed</button></div>
+
+
+    </div>
+    <br>
+<hr>
+
+    <div id="buttonsShow2">
+        <div><button>electronics tv</button></div>
+        <div><button>electronics tablets</button></div>
+        <div><button>electronics sale tv</button></div>
+        <div><button>electronics for kids   </button></div>
+        <div><button>cleaning electronics</button></div>
+        <div><button>electronic games</button></div>
+        <div><button>apple electronics</button></div>
+        <div><button>electronics phones</button></div>
+
+    </div>
+    <br>
+    <hr>
+</div>
+    <div id="container">
+        <div id="rightMain">
+            
+            <select class="combo">
+                <option id="chinna">Departments</option>
+                </select>
+                <select class="combo">
+                    <option >Shop my store</option>
+                    </select>
+                    <select class="combo">
+                        <option >Price</option>
+                        </select>
+                        <select class="combo">
+                            <option >Brand</option>
+                            </select>
+                            <select class="combo">
+                                <option >Speed</option>
+                                </select>
+                                <select class="combo">
+                                    <option >Availability</option>
+                                    </select>
+                                    <select class="combo">
+                                        <option >Gifting</option>
+                                        </select>
+                                        <select class="combo">
+                                            <option >Age</option>
+                                            </select>
+                                            <select class="combo">
+                                                <option >Gender</option>
+                                                </select>
+                                                <select class="combo">
+                                                    <option >Color</option>
+                                                    </select>
+                                                    <select class="combo">
+                                                        <option >Customer Rating</option>
+                                                        </select>
+                                                        <select class="combo">
+                                                            <option >Special Offers</option>
+                                                            </select><select class="combo">
+                                                                <option >Category</option>
+                                                                </select>
+                                                                <select class="combo">
+                                                                    <option >Battery Included</option>
+                                                                    </select>
+                                                                    <select class="combo">
+                                                                        <option >Retailer</option>
+                                                                        </select>
+                                                                    
+
+        </div>
+        <div id="leftMain"></div>
+    </div>
+</body>
+</html>
+<script src="searchDisplay.js"></script>
+<!-- <script   type="module">
+    
+    import navbar from "./navbar.js";
+    document.getElementById("navbar").innerHTML = navbar();
+</script> -->

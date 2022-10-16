@@ -1,0 +1,100 @@
+#heading{
+   font-size: 24px;
+   font-weight: 700;
+   box-sizing: border-box;
+   font-family: Bogle,Helvetica Neue,Helvetica,Arial,sans-serif;
+   color: #2e2f32;
+}
+span{
+    color: #2e2f32;
+}
+#cart_section{
+    width: 95%;
+    height: 600px;
+    margin: auto;
+   display: flex;
+   justify-content: space-between;
+   gap: 25px;
+}
+#left_cart{
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
+    /* padding: 0px 20px; */
+}
+#right_cart{
+    width: 30%;
+    /* height: 400px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+#checkout{
+    padding: 15px 70px;
+    background-color: rgb(0,113,220);
+    color: white;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    border: none;
+    border-radius: 25px;
+}
+#subtotal{
+    margin-top: 20px;
+}
+#btn_checkout{
+    height: 80px;
+
+}
+
+
+/* -------Empty cart style------- */
+
+
+#empty_cart{
+    width: 90%;
+    margin: auto;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+}
+#empty_bag_img > img{
+    width: 350px;
+    margin: auto;
+    display: block;
+}
+#shopping{
+    text-align: center;
+}
+#group_btn > button{
+    padding: 10px;
+    border: 1px solid rgb(19, 19, 29);
+    border-radius: 20px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+/* #home{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("https://wallpaper.dog/large/20433820.jpg");
+   background-size:cover;
+   
+   } */
+.item_data{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #d5d7db;
+    margin: 10px;
+}
+.item_data img{
+    width: 140px;
+}
+#productDiv{
+    display: grid;
+    text-align: center;
+    margin: auto;
+}
+#remove_btn{
+    border-radius: 14px;
+    background-color: rgb(0,113,220);
+    color: white;
+    border: none;
+}
