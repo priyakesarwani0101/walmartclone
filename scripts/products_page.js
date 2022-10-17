@@ -221,12 +221,13 @@ function addToCart(index) {
     }
 
   
-
+    // document.getElementById("g-cart-length").innerText=cartArray.length;  
 
   localStorage.setItem("cart", JSON.stringify(cartArray))
+  location.reload();
 }
 
-
+// document.getElementById("g-cart-length").innerText=cartArray.length; 
 
 function addToWishList(i){
 var WishArray = JSON.parse(localStorage.getItem("wishlist")) || [];

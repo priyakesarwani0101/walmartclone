@@ -260,3 +260,5 @@ function displayData(wishlist) {
 }
 // localStorage.removeItem('wishlist');
 // localStorage.removeItem('cart');
+
+

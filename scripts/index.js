@@ -1,10 +1,10 @@
 import { getdata } from "../component/getdata.js"
-import navbar from "../component/navbar.js";
-document.getElementById("navbar").innerHTML = navbar();
+// import navbar from "../component/navbar.js";
+// document.getElementById("navbar").innerHTML = navbar();
 
 let i_for_img = 0;
 
-const img_arr = ["../images/slide1.png", "../images/slide2.png", "../images/slide3.png", "../images/slide4.png", "../images/slide5.png", "../images/slide6.png"]
+const img_arr = ["./images/slide1.png", "./images/slide2.png", "./images/slide3.png", "./images/slide4.png", "./images/slide5.png", "./images/slide6.png"]
 
 function changeImage() {
     if (i_for_img < img_arr.length) {
@@ -438,6 +438,7 @@ function addingyocart(el) {
         }
         list.push(to_push);
         localStorage.setItem("cart", JSON.stringify(list));
+        location.reload();
     }
 }
 function addingyocartforop(el) {
@@ -458,6 +459,7 @@ function addingyocartforop(el) {
         }
         list.push(to_push);
         localStorage.setItem("cart", JSON.stringify(list));
+        location.reload();
     }
 }
 function addingtowishlist(el) {
@@ -532,4 +534,38 @@ fetchingdatafor_nineth_div();
 fetchingdatafor_tenth_div();
 fetchingdatafor_extra_div();
 fetchingdatafor_eleventh_div();
+
+
+
+var temp = JSON.parse(localStorage.getItem("temp")) || [];
+console.log(temp);
+document.getElementById('accountholder-div').style.display = 'none';
+
+if (temp.length !== 0 && temp[0].login === true) {
+    document.getElementById('accountholder-div').style.display = 'block';
+
+    document.getElementById('accountholder').innerText = `Hi, ${temp[0].name} Account`;
+    document.getElementById('freshaccount-div').style.display = 'none';
+    // freshaccount-div
+    // document.getElementById('logout').innerText = 'Logout';
+
+
+}
+
+const carttemp= JSON.parse(localStorage.getItem("cart")) || [];
+
+console.log(carttemp.length);
+document.getElementById('cart-length').innerText=carttemp.length;
+
+
+//Checking Logged In Or Not
+
+
+
+let loggedInUser = localStorage.getItem("loggedInUser")||false;
+
+
+if(loggedInUser){
+    document.getElementById("userDropDownModal").style.display = 'none';
+}
 

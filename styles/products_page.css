@@ -1,6 +1,8 @@
 #wal-main-container {
   flex-direction: column;
+  
   }
+  
 
 .g-sidebar-filter-child {
   font-size: 13px;
@@ -82,7 +84,9 @@
   flex-direction: column;
   width: 20%;
   margin-left: 30px;
-  position: relative;
+  top: 0%; 
+   /* border:1px solid red */
+  
 }
 
 #products {
@@ -90,6 +94,9 @@
   flex-direction: column;
   width: 70%;
   margin: auto;
+ 
+  top: 0%;
+
 }
 
 #g-products-top {
@@ -226,18 +233,18 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  top: 0%;
 
 }
 
 #g-products_tab {
-  z-index: 1;
   cursor: pointer;
   font-family: Bogle, Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #46474a;
-  
-  
-
-}
+ 
+  top: 0%;
+ 
+  }
 
 #wish-button-div {
   width: 100px;

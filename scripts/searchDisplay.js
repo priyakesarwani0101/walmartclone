@@ -1,17 +1,9 @@
-//  document.getElementById("nav_searchbar").addEventListener("click",searchData)
-function searchDataItem(){
-    // let item=localStorage.getItem("SearchItemDisplay")
-    let item = document.getElementById("nav_searchbar").value;
-    document.getElementById("leftMain").textContent=""
-    let url = `https://walmart-products-gopal.herokuapp.com/${item}`
-    fetchData(url)
-    
-}
-searchDataItem()
 
+let url = `https://walmart-products-gopal.herokuapp.com/electronics`
 async function fetchData(url){
+    // console.log("running");
     try{
-   let res = await fetch(url);
+  let res = await fetch(url);
    let data = await res.json()
    console.log(data);
    dispalyData(data);
@@ -19,6 +11,8 @@ async function fetchData(url){
         console.log("Hello Error",error)
     }
 }
+
+fetchData(url);
 
 function dispalyData(data){
     // console.log(data.title)

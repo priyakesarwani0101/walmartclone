@@ -3,6 +3,8 @@
     margin: 0;
 }
 .bodytype{
+    
+    margin-top: 150px;
     background-color:rgb(230, 241, 252); 
 }
 .bodytype *{
@@ -141,14 +143,20 @@
     font-weight: 700;
     color: #2e2f32;
 }
+/* .third_div{
+    position: fixed;
+    top: 0%;
+} */
 #third_div_first{
     width: 96%;
+    
     /* margin-left: 2%; */
     margin: 25px;
     margin-left: 2%;
 }
 #second_div_second{
     padding: 15px;
+    /* border: 2px solid red; */
 }
 #second_div_second_second{
     display: grid;
@@ -1098,3 +1106,8 @@
         top: 120px;
     }
 }
+/* .swiper-wrapper{
+    border: 2px solid red;
+    position:fixed;
+    top: 0;
+} */

@@ -50,13 +50,14 @@ function checkData(data) {
 
         const detail = {
             name: name,
-            email: email
+            email: email,
+            login:true,
         }
 
         data.push(detail);
 
         localStorage.setItem('temp', JSON.stringify(data));
-
+        localStorage.setItem("loggedInUser",true);
 
         location.href = "./Enter Password.html"
 

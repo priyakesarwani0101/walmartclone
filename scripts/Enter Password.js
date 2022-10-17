@@ -77,7 +77,7 @@ function checkData(data) {
         document.getElementById('show-successful').style.display = 'block';
 
         setTimeout(() => {
-            window.location.href = "../pages/index.html";
+            window.location.href = "../index.html";
         }, 2000);
 
 
@@ -136,3 +136,4 @@ function spreadmessage() {
         message.innerText = 'More'
     }
 }
+

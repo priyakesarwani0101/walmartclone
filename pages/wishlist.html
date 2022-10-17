@@ -80,7 +80,7 @@
             </div>
         </div> -->
     </div>
-    <footer>
+    <!-- <footer>
         <div class="mainFooter">
             <div id="div1">
                 <h4 style="font-size:15px;font-weight: bold;">Customer Service </h4>
@@ -175,7 +175,7 @@
                 </div>
             </div>
             
-        </footer>
+        </footer> -->
 </body>
 <script src="../scripts/wishlist.js"></script>
 
@@ -183,4 +183,23 @@
 <script type="module">
     import navbar from "../component/navbar.js";
     document.getElementById("navbar").innerHTML = navbar();
+    var temp = JSON.parse(localStorage.getItem("temp")) || [];
+console.log(temp);
+document.getElementById('accountholder-div').style.display = 'none';
+
+if (temp.length !== 0 && temp[0].login === true) {
+    document.getElementById('accountholder-div').style.display = 'block';
+
+    document.getElementById('accountholder').innerText = temp[0].name;
+    document.getElementById('freshaccount-div').style.display = 'none';
+    // freshaccount-div
+    // document.getElementById('logout').innerText = 'Logout';
+
+
+}
+
+const carttemp= JSON.parse(localStorage.getItem("cart")) || [];
+
+console.log(carttemp.length);
+document.getElementById('cart-length').innerText=carttemp.length;
     </script>

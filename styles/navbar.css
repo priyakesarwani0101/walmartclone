@@ -1,24 +1,29 @@
-.main {
+.mainJaggu {
     width: 100%;
+    position: fixed;
+    top: 0%;
     height: 110px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     align-items: center;
-    border: 2px solid rgb(43, 255, 0);
+    /* border: 2px solid rgb(43, 255, 0); */
     background-color: rgb(0,113,220);
+    z-index: 10;
 }
 #navbar {
     display: flex;
+    
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 #nav_searchbar {
-    width: 721px;
+    width: 550px;
     height: 40px;
+    border: 0;
     padding: 20px;
     border-radius: 20px;
 }
-
+/* 
 #navbar button {
     border: none;
     color: white;
@@ -27,7 +32,11 @@
     height: 50px;
     font-size: 1rem;
     font: bolder;
-}
+} */
+/* #btn_cart{
+    width: 40px;
+    height: 40px;
+} */
 
 /* Inner buttons style */
 svg {
@@ -35,7 +44,11 @@ svg {
 }
 
 #div_items {
-    margin-left: 15px;
+    margin-left: 29px;
+    
+}
+#div_cart>div{
+  border:  1px solid black;
     
 }
 
@@ -64,20 +77,21 @@ svg {
     margin-top: 15px;
 }
 
-
+/* 
 #div_items button {
     text-align: start;
     width: 100px;
-}
+} */
 
-#btn_item{
+#btn_itemJaggu{
     display: flex;
+    align-items: center;
     flex-direction: row;
 }
-#btn_item div{
+/* #btn_item div{
     width: 80px;
     margin-left: 6px;
-}
+} */
 
 #btn_signin{
     display: flex;
@@ -100,14 +114,25 @@ svg {
 
 
 /* Hover part */
-
-#walmart_logo:hover{
-    width: 130px;
+#walmart_logoJaggu{
+    width: 120px;
+    height: 50px;
+    padding: 10px;
+}
+#walmart_logoJaggu:hover{
+    width: 120px;
     height: 50px;
     border-radius: 50px;
     /* background-color: rgba(0, 0, 0, 0.541); */
     border: 2px solid black;
     
+}
+#btn_department{
+    width: 130px;
+    height: 50px;
+    border: 0;
+    color: white;
+    background-color: rgb(0,113,220);
 }
 #btn_department:hover {
     width: 130px;
@@ -115,19 +140,45 @@ svg {
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.541);
 }
-
+#btn_service{
+    width: 110px;
+    height: 50px;
+    color: white;
+   
+    border: 0;
+    background-color: rgb(0,113,220);
+}
 #btn_service:hover {
-    width: 130px;
+    width: 110px;
     height: 50px;
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.541);
 }
 
-#btn_item:hover {
+#btn_itemJaggu{
     width: 110px;
+    height: 50px;
+    color: white;
+   
+    border: 0;
+    background-color: rgb(0,113,220);
+    /* margin-left: 20px; */
+}
+#btn_itemJaggu:hover {
+    width: 110px;
+    /* margin-left: 20px; */
     height: 50px;
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.541);
+}
+
+#btn_signin{
+    width: 110px;
+    height: 50px;
+   color: white;
+    border: 0;
+    background-color: rgb(0,113,220);
+   
 }
 
 #btn_signin:hover {
@@ -135,6 +186,12 @@ svg {
     height: 50px;
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.541);
+}
+#btn_cart{
+    width: 45px;
+    height: 50px;
+    background-color: rgb(0,113,220);
+    border: 0;
 }
 
 #btn_cart:hover {
@@ -174,10 +231,12 @@ svg {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    
 }
 .dropdown-content2 {
     display: none;
     height: 300px;
+    /* margin-top: -10px; */
     position: absolute;
     background-color: #0071dc;
     width: 320px;
@@ -212,6 +271,7 @@ svg {
 }
 .dropdown-conten2 a:hover {
     background-color: #ddd;
+    
 }
 
 .dropDown:hover .dropdown-content {
@@ -245,6 +305,7 @@ width: 80%;
 .leftDiv{
 
 width: 100%;
+/* border: 2px solid red; */
 text-align: center;
 
 
@@ -269,20 +330,27 @@ align-items: center;
 
 }
 
- #inner_signBtn{
+  #inner_signBtn{
 border-radius: 20px;
 
-padding-left: 20px;
-margin-bottom: 10px;
-color: white;
+
 height: 30px;
-margin-top: 30px;
-width: 80px;
+/* text-decoration: underline; */
+/* width: 150px; */
+padding-left: 18px;
+border: 0;
+/* text-align: center; */
+/* border: 0;  */
+color: white;
+/* font-weight: 500; */
+/* font-size: 14px; */
+/* margin-top: 10px; */
+/* width: 80px; */
 background-color:#0071dc;
 
-}
+} 
 
-#inner_create{
+/* #inner_create{
     padding-left: 10px;
 border-radius: 20px;
 text-align: center;
@@ -290,18 +358,29 @@ color: white;
 width: 140px;
 margin-top: 10px;
 height: 30px;
-}
+} */
 
 /* rightDiv code */
 .rightDiv{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 #location_div_img{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 20px;
+}
+#rightBtnJaggu{
+    width: 250px;
+    height: 20px;
+    /* margin-bottom: 15px; */
+    align-items: center;
+    margin-bottom: 7px;
+    border: 0;
+    color: white;
+    background-color: #0071dc;
 }
 #location_btn{
     display: flex;
@@ -348,4 +427,23 @@ background-color: #f1f1f1;
     justify-content: center;
     width: 250px;
     height: 30px;
+}
+
+
+#accountholder-div{
+    margin-top: 14px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: r; */
+}
+
+#g-cart-length{
+    background-color: yellow;
+    border-radius: 100%;
+    width: 15px;
+    margin-left: 15px;
+   /* margin-top: 10px; */
+   position: absolute;
+   
 }

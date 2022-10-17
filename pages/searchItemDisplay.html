@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Walmart-electronics</title>
+    <link rel="icon" href="https://www.walmart.com/favicon.ico" type="image/x-icon" />
     <!-- <link rel="stylesheet" href="navbar.css"> -->
-    <link rel="stylesheet" href="searchItemDisplay.css">
-    <link rel="stylesheet" href="searchData.css">
+    <link rel="stylesheet" href="../styles/searchItemDisplay.css">
+    <link rel="stylesheet" href="../styles/searchData.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+     
+    <script defer src="../scripts/searchDisplay.js" type="module"></script>
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -23,7 +27,7 @@
 
     <div id="navbar"></div>
 
-    <input type="text" onchange="searchData()" id="nav_searchbar">
+    <!-- <input type="text" onchange="searchData()" id="nav_searchbar"> -->
    
     <div id="PosFix">
         <hr>
@@ -108,9 +112,8 @@
     </div>
 </body>
 </html>
-<script src="searchDisplay.js"></script>
-<!-- <script   type="module">
-    
-    import navbar from "./navbar.js";
+<script src="../scripts/searchDisplay.js" ></script>
+<script type="module">
+    import navbar from "../component/navbar.js";
     document.getElementById("navbar").innerHTML = navbar();
-</script> -->
+</script>

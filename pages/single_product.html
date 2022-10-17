@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Walamrt-Single-product</title>
+    <link rel="icon" href="https://www.walmart.com/favicon.ico" type="image/x-icon" />
     <script defer src="../scripts/single_product.js"></script>
     <link rel="stylesheet" href="../styles/products_page.css">
     <link rel="stylesheet" href="../styles/navbar.css">
@@ -24,7 +25,7 @@
 
 
 
-
+<!-- 
     <footer>
         <div class="mainFooter">
             <div id="div1">
@@ -120,11 +121,30 @@
                 </div>
             </div>
             
-        </footer>
+        </footer> -->
 </body>
 
 </html>
 <script type="module">
     import navbar from "../component/navbar.js";
     document.getElementById("navbar").innerHTML = navbar();
+    var temp = JSON.parse(localStorage.getItem("temp")) || [];
+console.log(temp);
+document.getElementById('accountholder-div').style.display = 'none';
+
+if (temp.length !== 0 && temp[0].login === true) {
+    document.getElementById('accountholder-div').style.display = 'block';
+
+    document.getElementById('accountholder').innerText = temp[0].name;
+    document.getElementById('freshaccount-div').style.display = 'none';
+    // freshaccount-div
+    // document.getElementById('logout').innerText = 'Logout';
+
+
+}
+
+const carttemp= JSON.parse(localStorage.getItem("cart")) || [];
+
+console.log(carttemp.length);
+document.getElementById('cart-length').innerText=carttemp.length;
     </script>
