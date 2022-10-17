@@ -16,14 +16,15 @@
 
     </div>
    
-    <div>
-        <h1 id="heading" style="margin: 35px 0px 35px 20px ;font-size:30px">Cart</h1>
-        <span></span>
-    </div>
+    <!-- <div>
+        <h1 id="heading" >Cart</h1>
+        <span></span> 
+    </div> -->
+    <h1 id="heading">Cart</h1>
     <div id="cart_section">
         <div id="left_cart">
             <div id="left_cart_up" style="background-color:#f2f8fd ;">
-              <h2 style="height: 100px;margin:auto;width:100% ;text-align: center;">Pickup or delivery from store, as soon as Today</h2>
+              <h2 style="height: 100px;margin:auto;width:100% ;text-align: center;padding-top: 24px;">Pickup or delivery from store, as soon as Today</h2>
               <!-- <p><a href="" style="color:#2e2f32;">Reserve a Time</a></p> -->
             </div>
             <div id="total_items">
@@ -66,30 +67,30 @@
 </body>
 </html>
 
-<script type="module">
-    import navbar from "../component/navbar.js";
-    document.getElementById("navbar").innerHTML = navbar();
-    var temp = JSON.parse(localStorage.getItem("temp")) || [];
-console.log(temp);
-document.getElementById('accountholder-div').style.display = 'none';
+<script type="module" src="../scripts/cart.js">
+//     import navbar from "../component/navbar.js";
+//     document.getElementById("navbar").innerHTML = navbar();
+//     var temp = JSON.parse(localStorage.getItem("temp")) || [];
+// console.log(temp);
+// document.getElementById('accountholder-div').style.display = 'none';
 
-if (temp.length !== 0 && temp[0].login === true) {
-    document.getElementById('accountholder-div').style.display = 'block';
+// if (temp.length !== 0 && temp[0].login === true) {
+//     document.getElementById('accountholder-div').style.display = 'block';
 
-    document.getElementById('accountholder').innerText = temp[0].name;
-    document.getElementById('freshaccount-div').style.display = 'none';
-    // freshaccount-div
-    // document.getElementById('logout').innerText = 'Logout';
-
-
-}
+//     document.getElementById('accountholder').innerText = temp[0].name;
+//     document.getElementById('freshaccount-div').style.display = 'none';
+//     // freshaccount-div
+//     // document.getElementById('logout').innerText = 'Logout';
 
 
-const carttemp= JSON.parse(localStorage.getItem("cart")) || [];
+// }
 
-console.log(carttemp.length);
-document.getElementById('cart-length').innerText=carttemp.length;
+
+// const carttemp= JSON.parse(localStorage.getItem("cart")) || [];
+
+// console.log(carttemp.length);
+// document.getElementById('cart-length').innerText=carttemp.length;
 // location.reload();
     </script>
-<script src="../scripts/cart.js" ></script>
+<!-- <script src="../scripts/cart.js" ></script> -->
 
