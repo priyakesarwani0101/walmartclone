@@ -131,6 +131,7 @@ function decrementValue(index, itemQuantity){
   function calculateTotalCartAmount(){
     totalAmount=0;
     let cart = JSON.parse(localStorage.getItem("cart"))
+    document.getElementById('cart-length').innerText = cart.length;
     cart.forEach(element => {
     totalAmount+=element.quantity*+element.price
   });
